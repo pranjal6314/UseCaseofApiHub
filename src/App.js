@@ -24,12 +24,15 @@ function App() {
   return (
     <div className="App">
       {realEstateData?.map((property, index) => (
-        <div key={index} className="border rounded-lg shadow-md p-4 mb-4">
-          {/* <img
+        <div className="property-card">
+        <div className="image-container">
+          <img
             src={property.image}
             alt="property"
-            className="w-full h-auto rounded-lg mb-4"
-          /> */}
+            className=""
+          />
+        </div>
+        <div className="property-details">
           <h2 className="text-xl font-bold">
             Address: {property.address}, {property.city}, {property.state},{" "}
             {property.zipcode}
@@ -44,6 +47,8 @@ function App() {
           <p>Email: {property.agent.email}</p>
           <p>Phone: {property.agent.phone}</p>
         </div>
+      </div>
+      
       ))}
     </div>
   );

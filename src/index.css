@@ -15,3 +15,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.property-card {
+  display: flex;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.property-details {
+  flex: 1;
+  padding-left: 1rem;
+  border-left: 1px solid #e2e8f0;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
