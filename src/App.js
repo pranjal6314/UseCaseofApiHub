@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       {realEstateData?.map((property, index) => (
+
         <div className="property-card">
         <div className="image-container">
           <img
@@ -33,6 +34,7 @@ function App() {
           />
         </div>
         <div className="property-details">
+
           <h2 className="text-xl font-bold">
             Address: {property.address}, {property.city}, {property.state},{" "}
             {property.zipcode}
